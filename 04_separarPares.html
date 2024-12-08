@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<script>
+    //PROBLEMA
+    //Considere a lista abaixo:
+    // let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
+    //Apresente apenas os números pares. Apresente também a quantidade de números pares que existem e apresente a quantidade de elementos da lista original.
+
+     //ENTRADA
+     let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
+    let listaPar = [];
+    let par;
+
+  //PROCESSAMENTO
+  for (numero of listaDeItens) {
+        par = (Math.floor(numero / 2) * 2) - numero;
+        if (par == 0) {
+            listaPar.push(numero)
+        }
+        console.log(par);
+    }
+
+    //SAÍDA
+    document.write("Lista só com os números pares: " + listaPar.sort((a, b) => a - b).join(" - ") + "." + "\nExistem " + listaPar.length + " esses numeros pares nessa lista. \nNa lista original existiam " + listaDeItens.length + " itens." );
+
+</script>

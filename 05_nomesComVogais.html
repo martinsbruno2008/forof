@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+<script>
+    //PROBLEMA
+    //Considere a lista de nomes abaixo:
+    // let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
+    //Identifique os nomes que começam com qualquer vogal (A, E, I, O, U) e apresente os nomes em ordem alfabética.
+
+     //ENTRADA
+     let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
+    let listaVogal = [];
+    let posicao;
+
+
+    //PROCESSAMENTO
+    for (nome of listaDeNomes) {
+        posicao = nome.indexOf("A");
+        if (posicao == 0) {
+            listaVogal.push(nome)
+        };
+        posicao = nome.indexOf("E");
+        if (posicao == 0) {
+            listaVogal.push(nome)
+        };
+        posicao = nome.indexOf("I");
+        if (posicao == 0) {
+            listaVogal.push(nome)
+        };
+        posicao = nome.indexOf("O");
+        if (posicao == 0) {
+            listaVogal.push(nome)
+        };
+        posicao = nome.indexOf("U");
+        if (posicao == 0) {
+            listaVogal.push(nome)
+        };
+    };
+
+
+    //SAÍDA
+    document.write(listaVogal);
+
+</script>
